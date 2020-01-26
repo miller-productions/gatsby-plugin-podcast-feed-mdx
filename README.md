@@ -33,16 +33,6 @@ yarn add gatsby-plugin-podcast-feed-mdx
 ```
 ## Usage
 
-### Your Podcast Episode Mdx Files
-Include the following `key: value` pairs in the frontmatter of the mdx files for your podcast episodes.
-
-```mdx
----
-type: podcast-episode
----
-
-```
-
 ### Your gatsby-config.js File
 
 ```js
@@ -117,20 +107,20 @@ The main output of this plugin is an rss file for a podcast.
 
 The structure of the generated rss file has been designed to support [Apple Podcasts requirements](https://help.apple.com/itc/podcasts_connect/#/itcb54353390) and [Google Feed requirements](https://developers.google.com/search/reference/podcast/rss-feed)
 
-The rss file is generated when you run `gatsby build`. (*note: thee rss file is **not** generated when you run* `gatsby develop`)
+The rss file is generated when you run `gatsby build`. (*note: the rss file is **not** generated when you run* `gatsby develop`)
 
 
 
 
 ## Related Info
-For informaiton about the general rss feed specification, see the following:
+For information about the general rss feed specification, see the following:
 * [Official RSS Spec](http://www.rssboard.org/rss-specification)
 
 For information about podcast-specific rss feed specifications, see the following:
 * [Apple Podcasts Connect Help](https://help.apple.com/itc/podcasts_connect/#/itcb54353390)
 * [Google Feed Requirements](https://developers.google.com/search/reference/podcast/rss-feed)
 * [Ryan Parman's iTunes Podcast RSS Spec](https://github.com/simplepie/simplepie-ng/wiki/Spec:-iTunes-Podcast-RSS)
-* [FeedForAll iTune Tags Tutorial](https://www.feedforall.com/itune-tutorial-tags.htm)
+* [FeedForAll iTunes Tags Tutorial](https://www.feedforall.com/itune-tutorial-tags.htm)
 
 <!--
 Also see https://github.com/TheCraigHewitt/Seriously-Simple-Podcasting/blob/master/templates/feed-podcast.php

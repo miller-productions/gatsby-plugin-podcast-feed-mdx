@@ -3,7 +3,7 @@
   "version": "0.1.0-alpha.1",
   "description": "Gatsby plugin to generate a podcast rss feed using mdx for episodes.",
   "author": "Dan Miller",
-  "private": true,
+  "private": false,
   "license": "MIT",
   "homepage": "https://github.com/miller-productions/gatsby-plugin-podcast-feed-mdx#readme",
   "bugs": "https://github.com/miller-productions/gatsby-plugin-podcast-feed-mdx/issues",
