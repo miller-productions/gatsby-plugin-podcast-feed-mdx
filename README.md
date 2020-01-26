@@ -66,6 +66,7 @@ module.exports = {
         category3: `Business`,
         subCategory3: `Marketing`,
         timeToLive: `60`,
+        outputPath: `/podcast-rss-feed.xml`
       },
     },
   ],
