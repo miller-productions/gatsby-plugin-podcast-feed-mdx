@@ -38,7 +38,8 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
     ttl: pluginOptions.timeToLive,
     generator: `https://github.com/miller-productions/gatsby-plugin-podcast-feed-mdx`,
     custom_namespaces: {
-      'itunes': 'http://www.itunes.com/dtds/podcast-1.0.dtd'
+      'itunes': 'http://www.itunes.com/dtds/podcast-1.0.dtd',
+      'googleplay': 'http://www.google.com/schemas/play-podcasts/1.0'
     },
     custom_elements: [
       {'itunes:title': pluginOptions.title},
