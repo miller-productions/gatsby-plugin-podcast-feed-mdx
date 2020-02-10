@@ -79,6 +79,7 @@ module.exports = {
 // In each `.mdx` file you have (one per episode)
 ---
 type: podcast-episode
+slug: /your-website-path/to-this-episode
 title: Hello, podcast!
 subtitle: The first ever episode.
 publicationDate: 2019-01-29
@@ -120,9 +121,6 @@ For information about the general rss feed specification, see the following:
 For information about podcast-specific rss feed specifications, see the following:
 * [Apple Podcasts Connect Help](https://help.apple.com/itc/podcasts_connect/#/itcb54353390)
 * [Google Feed Requirements](https://developers.google.com/search/reference/podcast/rss-feed)
+* [Spotify Podcast Delivery Specification](https://podcasters.spotify.com/terms/Spotify_Podcast_Delivery_Specification_v1.6.pdf)
 * [Ryan Parman's iTunes Podcast RSS Spec](https://github.com/simplepie/simplepie-ng/wiki/Spec:-iTunes-Podcast-RSS)
 * [FeedForAll iTunes Tags Tutorial](https://www.feedforall.com/itune-tutorial-tags.htm)
-
-<!--
-Also see https://github.com/TheCraigHewitt/Seriously-Simple-Podcasting/blob/master/templates/feed-podcast.php
--->
