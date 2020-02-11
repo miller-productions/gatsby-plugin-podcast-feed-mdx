@@ -108,6 +108,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
               frontmatter {
                 title
                 slug
+                guid
                 subtitle
                 url
                 season
@@ -131,12 +132,12 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
   // for each episode
   episodes.forEach(edge => {
     // gather the options
-    const { excerpt, id } = edge.node;
-    const { title, slug, subtitle, url, season, episodeNumber, episodeType, publicationDate, author, size, duration, explicit, categories } = edge.node.frontmatter;
+    const { excerpt } = edge.node;
+    const { title, slug, guid, subtitle, url, season, episodeNumber, episodeType, publicationDate, author, size, duration, explicit, categories } = edge.node.frontmatter;
 
     // add an episode item to the feed using the options
     feed.item({
-      guid: id,
+      guid,
       title,
       date: publicationDate,
       description: excerpt,
