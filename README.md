@@ -80,6 +80,7 @@ module.exports = {
 ---
 type: podcast-episode
 slug: /your-website-path/to-this-episode
+guid: c30fddca-79fb-48b1-8ad5-69591149df8c
 title: Hello, podcast!
 subtitle: The first ever episode.
 publicationDate: 2019-01-29
