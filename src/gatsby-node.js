@@ -147,8 +147,8 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
       custom_elements: [
         { 'itunes:title': title },
         { 'itunes:subtitle': subtitle },
-        { 'itunes:season': season },
-        { 'itunes:episode': episodeNumber },
+        season && { 'itunes:season': season },
+        episodeNumber && { 'itunes:episode': episodeNumber },
         { 'itunes:duration': duration },
         { 'itunes:episodeType': episodeType },
         { 'itunes:explicit': explicit },
