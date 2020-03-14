@@ -1,6 +1,6 @@
 {
   "name": "gatsby-plugin-podcast-feed-mdx",
-  "version": "0.1.0-alpha.6",
+  "version": "0.1.0-alpha.7",
   "description": "Gatsby plugin to generate a podcast rss feed using mdx for episodes.",
   "author": "Dan Miller",
   "private": false,

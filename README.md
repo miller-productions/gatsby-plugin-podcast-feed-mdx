@@ -79,6 +79,7 @@ module.exports = {
 // In each `.mdx` file you have (one per episode)
 ---
 type: podcast-episode
+status: published
 slug: /your-website-path/to-this-episode
 guid: c30fddca-79fb-48b1-8ad5-69591149df8c
 title: Hello, podcast!

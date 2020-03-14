@@ -100,7 +100,10 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
   const result = await wrapper(
     graphql(`
       query {
-        podcastEpisodes: allMdx(filter: {frontmatter: {type: {eq: "podcast-episode"}}}) {
+        podcastEpisodes: allMdx(
+          filter: {frontmatter: {
+            status: {eq: "published"},
+            type: {eq: "podcast-episode"}}}) {
           edges {
             node {
               excerpt
