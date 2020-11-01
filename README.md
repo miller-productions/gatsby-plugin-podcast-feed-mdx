@@ -36,7 +36,6 @@ yarn add gatsby-plugin-podcast-feed-mdx
 ### Your gatsby-config.js File
 
 ```js
-// In your `gatsby-config.js`
 module.exports = {
   plugins: [
     {
@@ -75,8 +74,9 @@ module.exports = {
 
 ### Your Podcast Episode Mdx File(s)
 
+In each .mdx file you have the following...
+
 ```text
-// In each `.mdx` file you have (one per episode)
 ---
 type: podcast-episode
 status: published
