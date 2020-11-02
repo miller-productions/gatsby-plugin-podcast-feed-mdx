@@ -1,6 +1,7 @@
 const RSS = require("rss")
 const path = require("path")
 const fs = require("fs-extra")
+const entities = require("entities")
 
 const wrapper = promise => promise.then(result => {
   if (result.errors) {
@@ -107,6 +108,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
           edges {
             node {
               excerpt
+              html
               id
               frontmatter {
                 title
@@ -135,7 +137,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
   // for each episode
   episodes.forEach(edge => {
     // gather the options
-    const { excerpt } = edge.node;
+    const { html, excerpt } = edge.node;
     const { title, slug, guid, subtitle, url, season, episodeNumber, episodeType, publicationDate, author, size, duration, explicit, categories } = edge.node.frontmatter;
 
     // add an episode item to the feed using the options
@@ -166,6 +168,7 @@ exports.onPostBuild = async ({ graphql }, pluginOptions) => {
         },
         { 'googleplay:description': excerpt },
         { 'googleplay:explicit': explicit },
+        { "content:encoded": { _cdata: entities.decodeHTML(html) } },
       ],
       enclosure: {
         url,
